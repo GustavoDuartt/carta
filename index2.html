@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorização para Encontro</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">Carta de Autorização</h2>
+        </div>
+
+        <div class="content">
+            <h3>Prezada Sra. Márcia,</h3>
+            <p>Espero que esteja bem! Estou escrevendo para pedir a sua permissão para levar sua filha a um (encontro), pois tenho o sentimento de que não há insegurança entre ambas sobre esse processo. Eu gostaria de aproveitar esta oportunidade para tranquilizá-la de que não há motivo para preocupações. Estou comprometido em construir um relacionamento saudável e positivo com sua filha, caso venha ocorrer tudo certo. Minha intenção é apenas criar momentos felizes e engraçados ao lado dela neste momento.<br>Se houver qualquer coisa específica que você gostaria de discutir antes do nosso encontro, estou à disposição para conversar.</p>
+            <hr>
+            <p>Eu, <strong>Márcia</strong>, autorizo o meu futuro genro <strong>Gustavo Duarte</strong> a levar a minha filha <strong>Mirelle</strong> em um encontro, conforme os detalhes abaixo:</p>
+
+            <ul class="details">
+                <li><strong>Data:</strong> 11/05</li>
+                <li><strong>Hora de Saída:</strong> 14:30 </li>
+                <li><strong>Hora de Retorno:</strong> A definir </li>
+            </ul>
+
+            <p>O encontro será realizado de forma responsável e respeitosa. Estou ciente e concordo com esta programação.</p>
+
+            <div class="signature">
+                <p class="signature-line">Assinatura: <input type="text"></p>
+                <p class="signature-line">Data: <input type="date"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn">
+        <input type="button" value="Enviar" onclick="enviar()">
+    </div>
+
+    <script>
+        function enviar() {
+
+            var phonenumber = "+5561981302523";
+            var mensagem = "Estou ciente e de acordo com o encontro solicitado :)"
+
+            var url = "https://wa.me/" + phonenumber + "?text="
+            +"*Eu :* Márcia "
+            +mensagem+ "%0a"
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+</html>

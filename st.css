@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('http://wallpapercave.com/wp/wp1853040.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 20px; /* Adicionar preenchimento geral ao corpo */
+    box-sizing: border-box; /* Incluir preenchimento no cálculo de largura */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+}
+
+.content {
+    color: #666;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+}
+
+.details li {
+    margin-bottom: 10px;
+}
+
+.signature {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signature-line {
+    display: inline-block;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    color: #777;
+}
+
+input[type="button"] {
+    background-color: #52ff43;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px; /* Adicionar espaço acima do botão */
+}
+
+input[type="button"]:hover {
+    background-color: #0fff43;
+}
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+    }
+    .container {
+        padding: 20px; /* Reduz o preenchimento interno */
+    }
+
+    .title {
+        font-size: 20px; /* Diminui o tamanho da fonte do título */
+    }
+
+    .content {
+        font-size: 14px; /* Diminui o tamanho da fonte do conteúdo */
+    }
+
+    input[type="button"] {
+        margin-top: 10px; /* Ajusta o espaçamento acima do botão em telas menores */
+    }
+}
